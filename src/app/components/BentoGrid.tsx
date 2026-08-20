@@ -173,7 +173,7 @@ export function BentoGrid() {
                       className="px-3.5 py-2.5 rounded-2xl rounded-tl-sm text-sm text-white/65 leading-relaxed"
                       style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}
                     >
-                      D 631 – Téléphone : 50 000 F<br />
+                      D 628 – Téléphone : 50 000 F<br />
                       D 4452 – TVA déductible : 9 000 F<br />
                       C 401 – SONATEL : 59 000 F ✓
                     </div>

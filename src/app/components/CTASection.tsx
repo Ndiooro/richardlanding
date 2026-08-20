@@ -265,6 +265,10 @@ export function CTASection() {
                       Votre place en liste VIP est confirmée. Un email de confirmation vient de vous être envoyé à{" "}
                       <span className="text-white font-medium">{email}</span>.
                     </p>
+                    <p className="mt-5 max-w-md rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-xs leading-relaxed text-white/55">
+                      Si vous ne trouvez pas notre e-mail, vérifiez votre dossier Spam, puis cliquez sur{" "}
+                      <span className="font-medium text-white/80">« Non-spam »</span> ou déplacez-le dans votre boîte de réception principale.
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -305,7 +309,7 @@ export function CTASection() {
             style={{ borderColor: "rgba(255,255,255,0.05)" }}
           >
             <p className="text-[11px] text-white/25">
-              © 2026 Richard AI. Tous droits réservés.
+              © 2026 Richard AI. Tous droits réservés. Nicomatic Sénégal
             </p>
           </div>
         </div>
