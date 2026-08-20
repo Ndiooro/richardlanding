@@ -64,8 +64,11 @@ export function IntroVideo({ onComplete, videoUrl = "/intro.mp4" }: IntroVideoPr
         playsInline
         preload="auto"
         onEnded={handleComplete}
-        onError={() => setHasVideoError(true)}
-        className="h-auto max-h-[78svh] w-full object-contain sm:h-full sm:max-h-none sm:object-cover"
+        onError={() => {
+          setHasVideoError(true);
+          handleComplete();
+        }}
+        className="h-auto max-h-[78svh] w-full object-contain sm:h-[92svh] sm:max-h-none sm:w-[92vw] sm:object-contain"
       />
 
       {hasVideoError && (
