@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Send, CheckCircle, ArrowRight, Loader2, AlertCircle } from "lucide-react";
 import logoImage from "../../imports/logo.png";
+import nsnImage from "../../imports/NSN.png";
 
 const BRAND = "#28741A";
 const BRAND_LIGHT = "#3d9e2b";
@@ -284,19 +285,26 @@ export function CTASection() {
       >
         <div className="max-w-6xl mx-auto pt-14">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
-            <div className="flex items-center gap-2.5">
-              <div className="relative w-8 h-8 flex-shrink-0">
-                <div
-                  className="absolute inset-0 blur-lg rounded-full"
-                  style={{ background: `${BRAND}50` }}
-                />
-                <img
-                  src={logoImage}
-                  alt="Richard AI"
-                  className="relative w-8 h-8 object-contain rounded-full"
-                />
+            <div className="flex flex-col items-start gap-2">
+              <div className="flex items-center gap-2.5">
+                <div className="relative w-8 h-8 flex-shrink-0">
+                  <div
+                    className="absolute inset-0 blur-lg rounded-full"
+                    style={{ background: `${BRAND}50` }}
+                  />
+                  <img
+                    src={logoImage}
+                    alt="Richard AI"
+                    className="relative w-8 h-8 object-contain rounded-full"
+                  />
+                </div>
+                <span className="font-semibold text-white text-sm">Richard AI</span>
               </div>
-              <span className="font-semibold text-white text-sm">Richard AI</span>
+              <img
+                src={nsnImage}
+                alt="NSN"
+                className="h-6 w-auto object-contain opacity-80"
+              />
             </div>
             <p className="text-xs text-white/35 leading-relaxed text-center sm:text-right">
               L'IA propose, l'humain valide.<br />
